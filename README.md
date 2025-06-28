@@ -41,22 +41,6 @@ block-beta
     style evm stroke:#00ffcc,stroke-width:2px
 ```
 
-## Features
-
-- 🔐 **Secure Wallet Management**
-  - Create and manage ICP and Ethereum L1 and L2 wallets
-  - Optional CSV logging for wallet tracking
-  - Multi-signature support
-  
-- 💰 **Transaction Operations**
-  - Balance checking
-  - Transaction execution
-  - Status tracking
-  
-- 🔄 **Cross-Language Support**
-  - Native Rust implementation
-  - Python bindings via PyO3
-
 ## Quick Start
 
 Add to your `Cargo.toml`:
