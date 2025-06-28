@@ -5,7 +5,7 @@
 
 A Rust SDK for Keygate, allowing developers to create their own multisignature infrastructure on-chain or off-chain.
 
-## System Architecture
+## Architecture
 
 ```mermaid
 block-beta
@@ -43,7 +43,7 @@ Add to your `Cargo.toml`:
 keygate-sdk = "0.1.0"
 ```
 
-### Basic Usage
+### Examples
 
 ```rust
 use keygate_sdk::{KeygateClient, load_identity};
@@ -67,40 +67,6 @@ async fn main() {
         .execute_transaction(&wallet_id.to_string(), &transaction)
         .await?;
 }
-```
-
-## Transaction Lifecycle
-
-```mermaid
-stateDiagram-v2
-    [*] --> Pending: Create
-    Pending --> InProgress: Process
-    InProgress --> Completed: Success
-    InProgress --> Failed: Error
-    InProgress --> Rejected: Denied
-    Completed --> [*]
-    Failed --> [*]
-    Rejected --> [*]
-```
-
-## API Reference
-
-### Wallet Operations
-```rust
-// Create wallet with logging
-let wallet_id = client.create_wallet_write_file().await?;
-
-// Get account information
-let account_id = client.get_icp_account(&wallet_id).await?;
-let balance = client.get_icp_balance(&wallet_id).await?;
-```
-
-### Python Integration
-```python
-from keygate_sdk import KeygateClient
-
-client = KeygateClient.from_pem("identity.pem", "https://keygate-url")
-wallet_id = client.create_wallet()
 ```
 
 ## Development Setup
@@ -133,13 +99,6 @@ We welcome contributions! Please see our [Contributing Guidelines](CONTRIBUTING.
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
-## Support
-
-- 📖 [Documentation](https://docs.keygate.io)
-- 💬 [Discord Community](https://discord.gg/keygate)
-- 📧 [Email Support](mailto:support@keygate.io)
-
----
 
 <div align="center">
   
