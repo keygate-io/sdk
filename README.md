@@ -1,5 +1,3 @@
-> This SDK is **stable** and ready for production use. For support, please open an issue in this repository.
-
 [![Internet Computer portal](https://img.shields.io/badge/InternetComputer-grey?logo=internet%20computer&style=for-the-badge)](https://internetcomputer.org)
 [![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg?logo=github&style=for-the-badge)](LICENSE)
 
