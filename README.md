@@ -1,9 +1,9 @@
 [![Internet Computer portal](https://img.shields.io/badge/InternetComputer-grey?logo=internet%20computer&style=for-the-badge)](https://internetcomputer.org)
 [![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg?logo=github&style=for-the-badge)](LICENSE)
 
-# Keygate SDK
+# sdk
 
-A comprehensive Rust SDK for the Internet Computer Protocol (ICP), enabling seamless integration with Keygate's multisignature infrastructure. Create and manage ICP wallets, handle transactions, and build secure multi-party applications with ease.
+A Rust SDK for Keygate, allowing developers to create their own multisignature infrastructure on-chain or off-chain.
 
 ## Overview
 
