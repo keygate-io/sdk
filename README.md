@@ -5,10 +5,6 @@
 
 A Rust SDK for Keygate, allowing developers to create their own multisignature infrastructure on-chain or off-chain.
 
-## Overview
-
-Keygate SDK provides a type-safe, efficient interface to interact with the Keygate ecosystem on the Internet Computer Protocol. Built with Rust's robust type system and async capabilities, it offers both low-level access to ICP operations and high-level abstractions for common wallet management tasks.
-
 ## System Architecture
 
 ```mermaid
